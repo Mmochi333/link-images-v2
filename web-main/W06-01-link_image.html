@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
@@ -31,11 +31,11 @@
 
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><a href="">🏠 Home</a></li>
-                    <li><a href="">📍 Heading</a></li>
-                    <li><a href="">🗒️ Formatting</a></li>
-                    <li><a href="">🔗 Link and Image</a></li>
-                    <li><a href="">📝 Practice</a></li>
+                    <li><a href="#">🏠 Home</a></li>
+                    <li><a href="#">📍 Heading</a></li>
+                    <li><a href="#">🗒️ Formatting</a></li>
+                    <li><a href="#">🔗 Link and Image</a></li>
+                    <li><a href="#">📝 Practice</a></li>
                 </ul>
             </nav>
         </header>
@@ -67,12 +67,12 @@
                         <div class="result-panel">
                             <div class="result-panel-title">ผลลัพธ์</div>
                             <div class="result-panel-body">
-                                <a href="">ไปยังเว็บไซต์มหาวิทยาลัย</a>
-                                <a href="">เปิด Google ในแท็บใหม่</a>
+                                <a href="https://www.npru.ac.th">ไปยังเว็บไซต์มหาวิทยาลัย</a>
+                                <a href="https://www.google.com" target="_blank">เปิด Google ในแท็บใหม่</a>
 
-                                <div style="display: flex; gap: 10px;">
+                                <div style="display: flex; gap: 10px; align-items: center;">
                                     <span class="mail-icon">✉️</span>
-                                    <a href="">ส่งอีเมลถึงผู้สอน</a>
+                                    <a href="mailto:teacher@example.com">ส่งอีเมลถึงผู้สอน</a>
                                 </div>
 
                                 <a href="index.html" class="back-button">← กลับไปหน้าแรก</a>
@@ -117,17 +117,17 @@
                                 <figure>
                                     <img src="https://npru.ac.th/assets/img/session/npru-02.jpg" alt="ภาพมหาวิทยาลัย"
                                         width="100">
-                                    <figcaption>ภาพมหาวิทยาลัย</figcaption>
+                                    <figcaption class="figcaption">ภาพมหาวิทยาลัย</figcaption>
                                 </figure>
                                 <figure>
                                     <img src="https://www2.npru.ac.th/2019/img/gallery/npru-49.jpg" alt="ภาพนักศึกษา"
                                         width="100">
-                                    <figcaption>ภาพนักศึกษา</figcaption>
+                                    <figcaption class="figcaption">ภาพนักศึกษา</figcaption>
                                 </figure>
                                 <figure>
                                     <img src="https://pws.npru.ac.th/suphitcha/data/images/se%281%29.png"
                                         alt="โลโก้สาขา SE" width="100">
-                                    <figcaption>โลโก้สาขา SE</figcaption>
+                                    <figcaption class="figcaption">โลโก้สาขา SE</figcaption>
                                 </figure>
                             </div>
                         </div>
@@ -144,8 +144,7 @@
                                             class="value">"images/student.jpg"</span> <span
                                             class="attr">alt</span>=<span class="value">"นักศึกษากำลังเรียน"</span>
                                         <span class="attr">width</span>=<span class="value">"180"</span><span
-                                            class="tag">&gt;</span>
-                                    </li>
+                                            class="tag">&gt;</span></li>
                                     <li><span class="tag">&lt;img</span> <span class="attr">src</span>=<span
                                             class="value">"images/logo.png"</span> <span class="attr">alt</span>=<span
                                             class="value">"โลโก้วิชา"</span> <span class="attr">height</span>=<span
@@ -227,37 +226,34 @@
                         </div>
                     </div>
                 </div>
+            </section>
+        </main>
 
-    </div>
-    </div>
-    </section>
-    </main>
-
-    <footer class="tip-box">
-        <div class="tip-icon">i</div>
-        <div class="tip-content">
-            <h3>เกร็ดความรู้</h3>
-            <p>
-                แท็ก <span class="tip-highlight">&lt;a&gt;</span> ใช้สำหรับสร้างลิงก์ (Hyperlink)
-                เพื่อเชื่อมโยงไปยังหน้าเว็บ ไฟล์ หรือที่อยู่อีเมลต่าง ๆ โดยใช้แอตทริบิวต์ <span
-                    class="tip-highlight">href</span> ระบุปลายทางของลิงก์ แท็ก <span
-                    class="tip-highlight">&lt;img&gt;</span> ใช้สำหรับแทรกรูปภาพ โดยใช้แอตทริบิวต์ <span
-                    class="tip-highlight">src</span> ระบุแหล่งที่อยู่ของไฟล์รูปภาพ และ <span
-                    class="tip-highlight">alt</span> ระบุข้อความอธิบายรูปภาพ ซึ่งสำคัญต่อการเข้าถึงได้ (Accessibility)
-                และช่วยแสดงข้อความเมื่อไม่สามารถโหลดรูปได้ • CSS สามารถใช้ตกแต่งลิงก์ด้วย <span
-                    class="tip-highlight">link
-                    color</span>, เอฟเฟกต์เมื่อ <span class="tip-highlight">hover</span>, ขนาดของรูปภาพ, ขอบ (<span
-                    class="tip-highlight">border</span>), มุมโค้ง (<span class="tip-highlight">border-radius</span>)
-                และเงา
-                (<span class="tip-highlight">box-shadow</span>) เพื่อให้หน้าเว็บสวยงามและน่าใช้งานมากยิ่งขึ้น
-            </p>
-        </div>
-        <div class="tip-side-icons">
-            <span>💡</span>
-            <span>📚</span>
-        </div>
-    </footer>
-
+        <!-- Footer -->
+        <footer class="tip-box">
+            <div class="tip-icon">i</div>
+            <div class="tip-content">
+                <h3>เกร็ดความรู้</h3>
+                <p>
+                    แท็ก <span class="tip-highlight">&lt;a&gt;</span> ใช้สำหรับสร้างลิงก์ (Hyperlink)
+                    เพื่อเชื่อมโยงไปยังหน้าเว็บ ไฟล์ หรือที่อยู่อีเมลต่าง ๆ โดยใช้แอตทริบิวต์ <span
+                        class="tip-highlight">href</span> ระบุปลายทางของลิงก์ แท็ก <span
+                        class="tip-highlight">&lt;img&gt;</span> ใช้สำหรับแทรกรูปภาพ โดยใช้แอตทริบิวต์ <span
+                        class="tip-highlight">src</span> ระบุแหล่งที่อยู่ของไฟล์รูปภาพ และ <span
+                        class="tip-highlight">alt</span> ระบุข้อความอธิบายรูปภาพ ซึ่งสำคัญต่อการเข้าถึงได้
+                    (Accessibility)
+                    และช่วยแสดงข้อความเมื่อไม่สามารถโหลดรูปได้ • CSS สามารถใช้ตกแต่งลิงก์ด้วย <span
+                        class="tip-highlight">link color</span>, เอฟเฟกต์เมื่อ <span class="tip-highlight">hover</span>,
+                    ขนาดของรูปภาพ, ขอบ (<span class="tip-highlight">border</span>), มุมโค้ง (<span
+                        class="tip-highlight">border-radius</span>)
+                    และเงา (<span class="tip-highlight">box-shadow</span>) เพื่อให้หน้าเว็บสวยงามและน่าใช้งานมากยิ่งขึ้น
+                </p>
+            </div>
+            <div class="tip-side-icons">
+                <span>💡</span>
+                <span>📚</span>
+            </div>
+        </footer>
     </div>
 </body>
 
