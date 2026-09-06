@@ -6,8 +6,8 @@
 
 body {
   font-family: "Kanit", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8fafc;
-  color: #64748b;
+  background-color: rgb(248, 248, 248);
+  color: gray;
   line-height: 1.6;
 }
 
@@ -15,7 +15,9 @@ body {
   width: 100%;
 }
 
-/* Header */
+/*========== 
+  Header 
+==========*/
 .site-header {
   background: linear-gradient(90deg, rgb(14, 15, 15), rgb(90, 90, 90));
   display: flex;
@@ -72,16 +74,17 @@ body {
   color: rgb(0, 0, 0);
 }
 
-/* Main Layout */
+/*==========
+  Main Layout
+==========*/
 .main-layout {
-  padding: 20px 22px;
+  padding: 20px 22px 0px;
   display: grid;
-  grid-template-columns: 72% 28%;
+  grid-template-columns: 70% 30%;
   gap: 20px;
-  align-items: start;
 }
 
-/* Left Content */
+/* ========== Left Content ==========*/
 .left-content {
   display: flex;
   flex-direction: column;
@@ -180,11 +183,6 @@ body {
   text-align: center;
 }
 
-.result-panel-body-3g img {
-  max-width: 100%;
-  height: auto;
-}
-
 .figcaption {
   font-size: 11px;
   text-align: center;
@@ -206,6 +204,7 @@ body {
   display: inline-block !important;
 }
 
+/* Code Syntax Highlighting */
 .code-panel {
   background-color: rgb(0, 0, 0);
 }
@@ -214,7 +213,6 @@ body {
   background-color: rgb(0, 0, 0);
   font-family: monospace;
   font-size: 14px;
-  overflow-x: auto;
 }
 
 .code-list {
@@ -230,277 +228,73 @@ body {
 .attr { color: rgb(120, 220, 120); }
 .value { color: rgb(100, 180, 255); }
 
-/* Right Sidebar */
+/*==========
+  Right Sidebar
+==========*/
 .right-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  border: none;
+  padding: 0;
 }
 
-.side-card {
+.objective-card {
   background-color: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 20px rgba(220, 230, 245, 0.6);
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e0e8f6;
+  border-radius: 20px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 16px rgba(0, 102, 255, 0.06);
 }
 
-.side-card-header {
+.objective-header {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
-.side-card-header h2 {
-  color: #1e3a8a;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.side-card-header .icon {
+.objective-header h2 {
+  color: #0b57d0;
   font-size: 20px;
+  font-weight: 600;
 }
 
-/* 1. จุดประสงค์การเรียนรู้ */
+.target-icon {
+  font-size: 24px;
+}
+
 .objective-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .objective-list li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  font-size: 13px;
-  color: #334155;
+  gap: 12px;
+  font-size: 15px;
+  color: #333333;
   line-height: 1.5;
 }
 
 .objective-list .badge {
-  background-color: #2563eb;
+  background-color: #1a73e8;
   color: #ffffff;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  font-weight: 700;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.objective-list code {
-  color: #1e293b;
-  font-family: monospace;
-}
-
-.tag-badges {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-}
-
-.tag-pill {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 4px;
-  border-radius: 20px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  font-family: monospace;
-  text-align: center;
-}
-
-.tag-a { background-color: #b0bff0; color: #3730a3; }
-.tag-href { background-color: #d9b9f7; color: #087990; }
-.tag-target { background-color: #d1e7dd; color: #000000; }
-.tag-img { background-color: #ffedd5; color: #c2410c; }
-.tag-src { background-color: #f3e8ff; color: #6b21a8; }
-.tag-alt { background-color: #ffe4e6; color: #9f1239; }
-.tag-width { background-color: #9ed1b8; color: #446fcc; }
-.tag-height { background-color: #fef3c7; color: #92400e; }
-
-/* 3. กิจกรรมฝึกปฏิบัติ */
-.activity-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.activity-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  color: #334155;
-  font-weight: 500;
-}
-
-.act-badge {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: 700;
   flex-shrink: 0;
-}
-
-.badge-1 { background-color: #2563eb; }
-.badge-2 { background-color: #3fe90b; }
-.badge-3 { background-color: #d97706; }
-.badge-4 { background-color: #9333ea; }
-.badge-5 { background-color: #d81515; }
-.badge-6 { background-color: #0d9488; }
-
-/* 4. สิ่งที่ต้องส่ง */
-.submit-card {
-  background-color: #fef9c3;
-  border: 1px solid #fef08a;
-  border-radius: 16px;
-  padding: 16px 20px;
-  box-shadow: 0 4px 15px rgba(250, 204, 21, 0.15);
-}
-
-.submit-card-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.plane-icon {
-  font-size: 26px;
-  color: #2563eb;
-}
-
-.submit-card-text h2 {
-  font-size: 16px;
-  color: #1e3a8a;
-  font-weight: 700;
-  margin: 0;
-}
-
-.submit-card-text p {
-  font-size: 13px;
-  color: #475569;
   margin-top: 2px;
 }
 
-/* Tip Box Footer */
-.tip-box {
-  background-color: #f0f7ff;
-  border: 1px solid #d0e3ff;
-  border-radius: 14px;
-  padding: 20px 24px;
-  margin: 20px 22px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.tip-icon {
-  background-color: #0959c2;
-  color: #ffffff;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  font-weight: 700; 
-  font-family: serif;
-  align-self: center;
-}
-
-.tip-content {
-  flex: 1;
-}
-
-.tip-content h3 {
-  color: #1e3a8a;
-  font-size: 17px;
-  font-weight: 700;
-  margin-bottom: 6px; /* แก้จุดพิมพ์ผิดตรงนี้ */
-}
-
-.tip-content p {
-  color: #000000;
-  font-size: 13.5px;
-  line-height: 1.65;
-}
-
-.tip-highlight {
-  color: #7b09fdfa;
-  font-weight: 600;
+.objective-list code {
+  color: #1a73e8;
   font-family: monospace;
-}
-
-.tip-side-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  font-size: 24px;
-  flex-shrink: 0;
-}
-/* Responsive */
-@media (max-width: 1200px) {
-  .main-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .right-sidebar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 10px;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .card-body-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .right-sidebar {
-    grid-template-columns: 1fr;
-  }
-
-  .tip-box {
-    grid-template-columns: 90px 1fr;
-  }
-
-  .tip-side-icons {
-    display: none;
-  }
-
-  .nav-list {
-    flex-wrap: wrap;
-  }
 }

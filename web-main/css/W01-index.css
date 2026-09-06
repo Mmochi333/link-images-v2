@@ -1,0 +1,112 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* หัวข้อหลัก h1 */
+h1 {
+    color: #222222;
+    font-size: 28px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+/* หัวข้อ h2 */
+h2 {
+    color: #0056b3;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 4px solid #0056b3;
+    padding-left: 8px;
+}
+
+/* เมนูหัวข้อรายการ */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #e9ecef;
+    color: #003d80;
+}
+
+/* กล่องโค้ด pre */
+pre {
+    background-color: #222222;
+    color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ลิงก์ทั่วไป */
+a {
+    color: #0056b3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ลิงก์ back to Top */
+a[href="#top"] {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #555555;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+a[href="#top"]:hover {
+    background-color: #e2e2e2;
+    color: #000000;
+}
+
+/* เส้นแบ่งหน้า */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+/* ส่วนท้ายหน้า */
+.text-center {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+
+.text-center p {
+    margin-top: 5px;
+}
